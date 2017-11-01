@@ -5,13 +5,13 @@ const toHex = (str) => Color(nameToHex(str)).hexString();
 const values = require('lodash.values');
 
 // Constants for the particle simulation.
-const MAX_PARTICLES = 5000;
-const PARTICLE_NUM_RANGE = () => 100 + Math.round(Math.random() * 100);
-const PARTICLE_GRAVITY = 0.005;
+const MAX_PARTICLES = 1000;
+const PARTICLE_NUM_RANGE = () => 10 + Math.round(Math.random() * 10);
+const PARTICLE_GRAVITY = 0.0055;
 const PARTICLE_ALPHA_FADEOUT = 0.96;
 const PARTICLE_VELOCITY_RANGE = {
   x: [-1, 1],
-  y: [-3.5, 1.5]
+  y: [-3.5, -1.5]
 };
 
 // Our extension's custom redux middleware. Here we can intercept redux actions and respond to them.
